@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
