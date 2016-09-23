@@ -4,8 +4,10 @@ const Layout = require('./Layout')
 const Landing = require('./Landing')
 const About = require('./About')
 const { Router, Route, IndexRoute, hashHistory } = require('react-router')
+
 const { store } = require('./Store')
 const { Provider } = require('react-redux')
+
 
 const App = React.createClass({
   render () {
