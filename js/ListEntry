@@ -3,8 +3,7 @@ const React = require('react')
 const ListEntry = React.createClass({
   render() {
     return (
-      {/* 4 column */}
-
+      {/* Look at data and create columns as neccessary */}
     )
   }
 })
