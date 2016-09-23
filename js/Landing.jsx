@@ -1,6 +1,7 @@
 const React = require('react')
 const Header = require('./Header')
 const { hashHistory } = require('react-router')
+const { connector } = require('./Store')
 
 
 const Landing = React.createClass({

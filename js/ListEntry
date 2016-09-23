@@ -1,0 +1,12 @@
+const React = require('react')
+
+const ListEntry = React.createClass({
+  render() {
+    return (
+      {/* 4 column */}
+
+    )
+  }
+})
+
+module.exports = ListEntry
