@@ -1,31 +1,22 @@
 const React = require('react')
 const Header = require('./Header')
+const List = require('./List')
 const { hashHistory } = require('react-router')
 const { connector } = require('./Store')
 
-
 const Landing = React.createClass({
-  getInitialState() {
-    return {
-      searchTerm: ''
-    }
-  },
-  handleSearch(event) {
-    this.setState({
-      searchTerm: event.target.value
-    })
-  },
   render() {
     return (
       <div>
         <Header />
         <h1>Landing</h1>
+        <List />
         <form>
-          <input className="" type="text" placeholder="search endpoint" value={this.state.searchTerm} onChange={this.handleSearch} />
+          {/*<input className="" type="text" placeholder="search endpoint" value={this.props.searchTerm} onChange={this.handleSearchTermEvent} />*/}
         </form>
       </div>
     )
   }
 })
 
-module.exports = Landing
+module.exports = connector(Landing)

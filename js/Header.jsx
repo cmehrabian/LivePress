@@ -11,9 +11,11 @@ const Header = React.createClass({
   handleSearchTermEvent(e) {
     this.props.setSearchTerm(e.target.value)
   },
+  handleGetPostsEvent(e) {
+    this.props.getPosts()
+  },
   render() {
     let rightNav;
-    console.log(this.props.searchTerm)
     rightNav = <input type='text' className='search-input' placeholder='search'
                 value={this.props.searchTerm} onChange={this.handleSearchTermEvent} />
     return (
@@ -33,6 +35,9 @@ const Header = React.createClass({
           </li>
           <li>
             {rightNav}
+          </li>
+          <li>
+            <button className="btn btn-success" onClick={this.handleGetPostsEvent}>GO Dummy Content</button>
           </li>
         </ul>
       </nav>
